@@ -1,6 +1,6 @@
-# Close duplicate tabs button for Zen browser
+# Close duplicate tabs for Zen browser
 
-Adds a "Close Duplicate Tabs" option to the new tab button's context menu. This mirrors Firefox's feature to close all duplicate tabs across the browser, unlike [Zen](https://zen-browser.app/ "Zen Browser"), which only lets you close duplicates of a single tab via right-click.
+Adds a "Close Duplicate Tabs" menu item to the 'new tab' button's context menu(s), visible either by right clicking or long pressing it. This mirrors Firefox's feature to close all duplicate tabs across the browser, unlike [Zen](https://zen-browser.app/ "Zen Browser"), which (as far as i know) only lets you close duplicates of a single tab via right-click, and haven't made the 'All tabs' menu visible which this action would reside in Firefox.
 
 It uses, and is dependent on [fx-autoconfig](https://github.com/MrOtherGuy/fx-autoconfig).
 
@@ -27,7 +27,7 @@ There is also a keyboard shortcut for closing duplicate tabs, currently set to <
 ### Install
 
 * Copy the folders _CSS_, _JS_ and _resources_ to the browsers chrome folder inside the active or preferred profile
-  * On Windows it is typically located here: _"%AppData%\zen\Profiles\\`{some-name}`.Default\chrome"_
+  * On Windows it's typically located here: _"%AppData%\zen\Profiles\\`{some-name}`.Default\chrome"_
 * Restart the browser
   * One might have to _"Clear startup cache"_ via about:support if the menu item doesn't show up
 
