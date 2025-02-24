@@ -78,7 +78,7 @@
     UC_API.Hotkeys.define(shortcut).autoAttach({ suppressOriginalKey: true });
 
     function removeDuplicatesAndNotify() {
-        const gBrowser = window.gBrowser || window._gBrowser;
+        const gBrowser = getGBrowser();
         if (!gBrowser) return;
 
         const duplicateTabs = gBrowser.getAllDuplicateTabsToClose();
