@@ -29,7 +29,7 @@ There is also a keyboard shortcut for closing duplicate tabs, currently set to <
 * Copy the folders _CSS_, _JS_ and _resources_ to the browsers chrome folder inside the active or preferred profile
   * On Windows it is typically located here: _"%AppData%\zen\Profiles\\`{some-name}`.Default\chrome"_
 * Restart the browser
-  * One might have to _"Clear startup cache"_ via about:support
+  * One might have to _"Clear startup cache"_ via about:support if the menu item doesn't show up
 
 ## Preview
 
