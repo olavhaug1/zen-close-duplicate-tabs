@@ -1,0 +1,54 @@
+/* ==UserScript==
+// @include *
+// @name           closeDuplicateTabs styles
+// @namespace      closeDuplicateTabs
+// @stylemode      agent_sheet
+// ==/UserScript==
+*/
+
+.menu-item-close-duplicate-tabs {
+  --menu-image: url('chrome://userChrome/content/close-duplicate-tabs-icon.svg') !important;
+  background-image: var(--menu-image) !important;
+}
+
+#duplicate-tabs-confirmation-hint-checkmark-animation-container {
+  position: relative;
+  overflow: hidden;
+  width: 14px;
+  height: 14px;
+
+  &[animate] > #duplicate-tabs-confirmation-hint-checkmark-image {
+    display: block;
+    position: absolute;
+    background-image: url(chrome://browser/skin/success-animation.svg);
+    background-repeat: no-repeat;
+    min-width: 304px;
+    max-width: 304px;
+    min-height: 14px;
+    max-height: 14px;
+    animation-name: confirmation-hint-checkmark-animation;
+    animation-fill-mode: forwards;
+    animation-timing-function: steps(18);
+    -moz-context-properties: fill;
+    fill: currentColor;
+
+    &:-moz-locale-dir(rtl) {
+      animation-name: confirmation-hint-checkmark-animation-rtl;
+      transform: translateX(288px);
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+      animation-duration: 300ms;
+      animation-delay: 60ms;
+    }
+  }
+}
+
+#duplicate-tabs-confirmation-hint-message {
+  margin-inline: 7px 0;
+}
+
+#duplicate-tabs-confirmation-hint {
+  font-weight: 400;
+  font-size: 1.1rem;
+}
