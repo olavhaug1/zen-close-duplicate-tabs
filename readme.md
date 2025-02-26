@@ -40,5 +40,5 @@ There is also a keyboard shortcut for closing duplicate tabs, currently set to <
 - After 1.8.1b:
     - Success notification doesn't always show up, and the placement is a bit weird
     - Long press menu isn't populated
-    - Check compatibilty with other layouts than the standard (left-side vertical, single, expanded toolbar)
-    - Support/populate menu(s) for new tab-widget
+- Check compatibilty with other layouts than the standard (left-side vertical, single, expanded toolbar)
+- Support/populate menu(s) for new tab-widget
