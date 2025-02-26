@@ -34,3 +34,9 @@ There is also a keyboard shortcut for closing duplicate tabs, currently set to <
 ## Preview
 
 ![preview](preview.png)
+
+## Bugs / room for improvement
+
+- After 1.8.1b:
+    - Success notification doesn't always show up, and the placement is a bit weird
+    - Long press menu isn't populated 
